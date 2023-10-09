@@ -295,7 +295,22 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="week38.html">
-   Week38: Logistic Regression and Optimization
+   Week 38: Logistic Regression and Optimization
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="exercisesweek39.html">
+   Exercises week 39
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="week39.html">
+   Week 39: Optimization and  Gradient Methods
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="week40.html">
+   Week 40: Gradient descent methods (continued) and start Neural networks
   </a>
  </li>
 </ul>
@@ -1777,7 +1792,7 @@ theorem.</p>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Bootstrap Statistics :
 original           bias      std. error
-  99.971  15.2789        99.9715        0.152907
+ 99.8182  15.0632        99.8197        0.152701
 </pre></div>
 </div>
 </div>
@@ -2034,14 +2049,14 @@ Error: 0.017355848195593312
 Bias^2: 0.010331721306655165
 Var: 0.007024126888938144
 0.017355848195593312 &gt;= 0.010331721306655165 + 0.007024126888938144 = 0.01735584819559331
-Polynomial degree: 9
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Polynomial degree: 9
 Error: 0.026605727637184558
 Bias^2: 0.010018312644139219
 Var: 0.016587414993045335
 0.026605727637184558 &gt;= 0.010018312644139219 + 0.016587414993045335 = 0.026605727637184554
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Polynomial degree: 10
+Polynomial degree: 10
 Error: 0.021592704588021178
 Bias^2: 0.010516485576646504
 Var: 0.01107621901137467
@@ -2483,12 +2498,12 @@ Mean squared error on test data: 238.16356503
 Degree of polynomial:  20
 Mean squared error on training data: 0.00140849
 Mean squared error on test data: 1345.68592431
-Degree of polynomial:  21
-Mean squared error on training data: 0.00119699
-Mean squared error on test data: 1836.21110005
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Degree of polynomial:  22
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Degree of polynomial:  21
+Mean squared error on training data: 0.00119699
+Mean squared error on test data: 1836.21110005
+Degree of polynomial:  22
 Mean squared error on training data: 0.00092904
 Mean squared error on test data: 1182.64316482
 Degree of polynomial:  23
@@ -2503,12 +2518,12 @@ Mean squared error on test data: 7697.35412147
 Degree of polynomial:  26
 Mean squared error on training data: 0.00075597
 Mean squared error on test data: 1078.81597834
-Degree of polynomial:  27
-Mean squared error on training data: 0.00068088
-Mean squared error on test data: 3189.20355156
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Degree of polynomial:  28
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Degree of polynomial:  27
+Mean squared error on training data: 0.00068088
+Mean squared error on test data: 3189.20355156
+Degree of polynomial:  28
 Mean squared error on training data: 0.00063364
 Mean squared error on test data: 692.24085321
 Degree of polynomial:  29
@@ -2516,9 +2531,9 @@ Mean squared error on training data: 0.00063862
 Mean squared error on test data: 3073.63180447
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/td/3yk470mj5p931p9dtkk0y6jw0000gn/T/ipykernel_10727/626635268.py:73: RuntimeWarning: divide by zero encountered in log10
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/td/3yk470mj5p931p9dtkk0y6jw0000gn/T/ipykernel_19367/626635268.py:73: RuntimeWarning: divide by zero encountered in log10
   plt.plot(polynomial, np.log10(trainingerror), label=&#39;Training Error&#39;)
-/var/folders/td/3yk470mj5p931p9dtkk0y6jw0000gn/T/ipykernel_10727/626635268.py:74: RuntimeWarning: divide by zero encountered in log10
+/var/folders/td/3yk470mj5p931p9dtkk0y6jw0000gn/T/ipykernel_19367/626635268.py:74: RuntimeWarning: divide by zero encountered in log10
   plt.plot(polynomial, np.log10(testerror), label=&#39;Test Error&#39;)
 </pre></div>
 </div>
@@ -2603,7 +2618,7 @@ Mean squared error on test data: 3073.63180447
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/td/3yk470mj5p931p9dtkk0y6jw0000gn/T/ipykernel_10727/3817475779.py:63: RuntimeWarning: divide by zero encountered in log10
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/td/3yk470mj5p931p9dtkk0y6jw0000gn/T/ipykernel_19367/3817475779.py:63: RuntimeWarning: divide by zero encountered in log10
   plt.plot(polynomial, np.log10(estimated_mse_sklearn), label=&#39;Test Error&#39;)
 </pre></div>
 </div>
@@ -2699,10 +2714,10 @@ we subtract the mean values).</p>
 [1.79909592 0.47176716 5.01550546]
   
 test MSE of OLS:
-1.13943111290393
+1.139431112903922
   
 test MSE of Ridge
-1.1395235273363686
+1.1395235273363669
 </pre></div>
 </div>
 <img alt="_images/week37_176_1.png" src="_images/week37_176_1.png" />

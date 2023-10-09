@@ -285,7 +285,32 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="week37.html">
-   Week 37: Statitsitcal interpretations and Resampling Methods
+   Week 37: Statistical interpretations and Resampling Methods
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="exercisesweek38.html">
+   Exercises week 38
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="week38.html">
+   Week 38: Logistic Regression and Optimization
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="exercisesweek39.html">
+   Exercises week 39
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="week39.html">
+   Week 39: Optimization and  Gradient Methods
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="week40.html">
+   Week 40: Gradient descent methods (continued) and start Neural networks
   </a>
  </li>
 </ul>
@@ -997,11 +1022,11 @@ which equals</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/td/3yk470mj5p931p9dtkk0y6jw0000gn/T/ipykernel_7714/483257001.py:18: MatplotlibDeprecationWarning: Calling gca() with keyword arguments was deprecated in Matplotlib 3.4. Starting two minor releases later, gca() will take no keyword arguments. The gca() function should only be used to get the current axes, or if no axes exist, create new axes with default keyword arguments. To create a new axes with non-default arguments, use plt.axes() or plt.subplot().
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/td/3yk470mj5p931p9dtkk0y6jw0000gn/T/ipykernel_19294/483257001.py:18: MatplotlibDeprecationWarning: Calling gca() with keyword arguments was deprecated in Matplotlib 3.4. Starting two minor releases later, gca() will take no keyword arguments. The gca() function should only be used to get the current axes, or if no axes exist, create new axes with default keyword arguments. To create a new axes with non-default arguments, use plt.axes() or plt.subplot().
   ax = fig.gca(projection=&quot;3d&quot;)
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;mpl_toolkits.mplot3d.art3d.Poly3DCollection at 0x11e77b070&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;mpl_toolkits.mplot3d.art3d.Poly3DCollection at 0x127e425e0&gt;
 </pre></div>
 </div>
 <img alt="_images/chapteroptimization_61_2.png" src="_images/chapteroptimization_61_2.png" />
@@ -1059,7 +1084,7 @@ which equals</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x11ecf9850&gt;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x16c9a8880&gt;]
 </pre></div>
 </div>
 <img alt="_images/chapteroptimization_69_1.png" src="_images/chapteroptimization_69_1.png" />
@@ -1316,11 +1341,11 @@ when <span class="math notranslate nohighlight">\(||\nabla_\beta C(\beta_k) || \
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.33196524 4.36593124]
-[[4.09963157]
- [2.99760425]]
-[[4.09963157]
- [2.99760425]]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.31022577 4.45255977]
+[[3.8942133 ]
+ [3.04191629]]
+[[3.8942133 ]
+ [3.04191629]]
 </pre></div>
 </div>
 <img alt="_images/chapteroptimization_123_1.png" src="_images/chapteroptimization_123_1.png" />
@@ -1349,9 +1374,9 @@ when <span class="math notranslate nohighlight">\(||\nabla_\beta C(\beta_k) || \
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[4.21639245]
- [2.82985482]]
-[4.15172236] [2.79589065]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[4.13542726]
+ [2.97804446]]
+[4.07929472] [2.96841776]
 </pre></div>
 </div>
 </div>
@@ -1422,10 +1447,10 @@ C_{\text{ridge}}(\beta) = \frac{1}{n}||X\beta -\mathbf{y}||^2 + \lambda ||\beta|
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[3.98919197]
- [2.94015598]]
-[[3.94925462]
- [2.97087408]]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[3.9208878 ]
+ [3.21055226]]
+[[3.84859258]
+ [3.26931499]]
 </pre></div>
 </div>
 <img alt="_images/chapteroptimization_132_1.png" src="_images/chapteroptimization_132_1.png" />
@@ -1675,15 +1700,15 @@ function.</p>
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Own inversion
-[[4.5424657 ]
- [2.40026896]]
-Eigenvalues of Hessian Matrix:[0.29830651 3.89658408]
+[[3.87533278]
+ [2.94854992]]
+Eigenvalues of Hessian Matrix:[0.31803769 4.15962297]
 theta from own gd
-[[4.5424657 ]
- [2.40026896]]
+[[3.87533278]
+ [2.94854992]]
 theta from own sdg
-[[4.55687658]
- [2.41165766]]
+[[3.90803422]
+ [2.93820524]]
 </pre></div>
 </div>
 <img alt="_images/chapteroptimization_148_1.png" src="_images/chapteroptimization_148_1.png" />
@@ -2333,7 +2358,7 @@ The analytical derivative of f7 at n = 2 is: 1
 <span class="nn">File ~/miniforge3/envs/myenv/lib/python3.9/site-packages/autograd/differential_operators.py:25,</span> in <span class="ni">grad</span><span class="nt">(fun, x)</span>
 <span class="g g-Whitespace">     </span><span class="mi">18</span> <span class="nd">@unary_to_nary</span>
 <span class="g g-Whitespace">     </span><span class="mi">19</span> <span class="k">def</span> <span class="nf">grad</span><span class="p">(</span><span class="n">fun</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
-<span class="g g-Whitespace">     </span><span class="mi">20</span>     <span class="sd">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">     </span><span class="mi">20</span><span class="w">     </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="g g-Whitespace">     </span><span class="mi">21</span><span class="sd">     Returns a function which computes the gradient of `fun` with respect to</span>
 <span class="g g-Whitespace">     </span><span class="mi">22</span><span class="sd">     positional argument number `argnum`. The returned function takes the same</span>
 <span class="g g-Whitespace">     </span><span class="mi">23</span><span class="sd">     arguments as `fun`, but returns the gradient instead. The function `fun`</span>
