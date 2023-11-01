@@ -1519,7 +1519,7 @@ doconce format html week43.do.txt --no_mako -->
 <!-- dom:TITLE: Week 43: Deep Learning: Constructing a Neural Network code and solving differential equations --><div class="tex2jax_ignore mathjax_ignore section" id="week-43-deep-learning-constructing-a-neural-network-code-and-solving-differential-equations">
 <h1>Week 43: Deep Learning: Constructing a Neural Network code and solving differential equations<a class="headerlink" href="#week-43-deep-learning-constructing-a-neural-network-code-and-solving-differential-equations" title="Permalink to this headline">¶</a></h1>
 <p><strong>Morten Hjorth-Jensen</strong>, Department of Physics, University of Oslo and Department of Physics and Astronomy and Facility for Rare Isotope Beams, Michigan State University</p>
-<p>Date: <strong>Oct 25, 2023</strong></p>
+<p>Date: <strong>Oct 26, 2023</strong></p>
 <p>Copyright 1999-2023, Morten Hjorth-Jensen. Released under CC Attribution-NonCommercial 4.0 license</p>
 <div class="section" id="plans-for-week-43">
 <h2>Plans for week 43<a class="headerlink" href="#plans-for-week-43" title="Permalink to this headline">¶</a></h2>
@@ -1528,11 +1528,13 @@ doconce format html week43.do.txt --no_mako -->
 <li><p>Exercise on writing your own neural network code, application to the OR and XOR gates</p></li>
 <li><p>The exercises this week will be continued next week as well</p></li>
 <li><p>Discussion of project 2</p></li>
+<li><p><a class="reference external" href="https://youtu.be/Ia6wwDLxqtM">Video of lab session</a></p></li>
 </ul>
 <p><strong>Material for the lecture on Thursday October 26, 2023.</strong></p>
 <ul class="simple">
 <li><p>Building our own Feed-forward Neural Network and discussion of project 2, continuation from last week</p></li>
 <li><p>Solving differential equations with Neural Networks and intro to <strong>Tensorflow</strong> with  examples.</p></li>
+<li><p><a class="reference external" href="https://youtu.be/_-AwbBh4G-8">Video of lecture</a></p></li>
 <li><p>Readings and Videos:</p>
 <ul>
 <li><p>These lecture notes</p></li>
@@ -1689,12 +1691,13 @@ inputs <span class="math notranslate nohighlight">\(x_1\)</span> and <span class
 <p>and multiplying with <span class="math notranslate nohighlight">\(\boldsymbol{a}_h\)</span> gives the output</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\boldsymbol{a}_o=\boldsymbol{w}_h^T\begin{bmatrix} 0 &amp; 0 \\
+\boldsymbol{a}_o=\begin{bmatrix} 0 &amp; 0 \\
                        1 &amp; 0 \\
 		       1 &amp; 0 \\
-		       2 &amp; 1 \end{bmatrix}=\begin{bmatrix} 0 \\ 1 \\ 1 \\0\end{bmatrix},
+		       2 &amp; 1 \end{bmatrix}\begin{bmatrix} 1 \\
+                       -2\end{bmatrix}=\begin{bmatrix} 0 \\ 1 \\ 1 \\0\end{bmatrix},
 \end{split}\]</div>
-<p>the wanted result.</p>
+<p>the wanted result.  Pay attention to the dimensionalities as well.</p>
 </div>
 <div class="section" id="setting-up-the-neural-network">
 <h2>Setting up the Neural Network<a class="headerlink" href="#setting-up-the-neural-network" title="Permalink to this headline">¶</a></h2>
@@ -1859,8 +1862,9 @@ Accuracy score on data set:  0.5
 Learning rate  =  1e-05
 Lambda =  1.0
 Accuracy score on data set:  0.5
-
-Learning rate  =  1e-05
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Learning rate  =  1e-05
 Lambda =  10.0
 Accuracy score on data set:  0.5
 
@@ -2055,7 +2059,7 @@ Accuracy score on data set:  0.5
   warnings.warn(
 </pre></div>
 </div>
-<img alt="_images/week43_30_2.png" src="_images/week43_30_2.png" />
+<img alt="_images/week43_30_3.png" src="_images/week43_30_3.png" />
 </div>
 </div>
 </div>
@@ -18833,7 +18837,9 @@ probabilities sum up to: 1.0
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>predictions = (n_inputs) = (1437,)
-prediction for image 0: 8
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>prediction for image 0: 8
 correct label for image 0: 6
 </pre></div>
 </div>

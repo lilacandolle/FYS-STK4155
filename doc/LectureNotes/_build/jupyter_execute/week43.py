@@ -8,7 +8,7 @@
 # # Week 43: Deep Learning: Constructing a Neural Network code and solving differential equations
 # **Morten Hjorth-Jensen**, Department of Physics, University of Oslo and Department of Physics and Astronomy and Facility for Rare Isotope Beams, Michigan State University
 # 
-# Date: **Oct 25, 2023**
+# Date: **Oct 26, 2023**
 # 
 # Copyright 1999-2023, Morten Hjorth-Jensen. Released under CC Attribution-NonCommercial 4.0 license
 
@@ -22,6 +22,8 @@
 # 
 #   * Discussion of project 2
 # 
+#   * [Video of lab session](https://youtu.be/Ia6wwDLxqtM)
+# 
 #   
 # 
 # **Material for the lecture on Thursday October 26, 2023.**
@@ -29,6 +31,8 @@
 #   * Building our own Feed-forward Neural Network and discussion of project 2, continuation from last week
 # 
 #   * Solving differential equations with Neural Networks and intro to **Tensorflow** with  examples.
+# 
+#   * [Video of lecture](https://youtu.be/_-AwbBh4G-8)
 # 
 #   * Readings and Videos:
 # 
@@ -210,13 +214,14 @@
 # and multiplying with $\boldsymbol{a}_h$ gives the output
 
 # $$
-# \boldsymbol{a}_o=\boldsymbol{w}_h^T\begin{bmatrix} 0 & 0 \\
+# \boldsymbol{a}_o=\begin{bmatrix} 0 & 0 \\
 #                        1 & 0 \\
 # 		       1 & 0 \\
-# 		       2 & 1 \end{bmatrix}=\begin{bmatrix} 0 \\ 1 \\ 1 \\0\end{bmatrix},
+# 		       2 & 1 \end{bmatrix}\begin{bmatrix} 1 \\
+#                        -2\end{bmatrix}=\begin{bmatrix} 0 \\ 1 \\ 1 \\0\end{bmatrix},
 # $$
 
-# the wanted result.
+# the wanted result.  Pay attention to the dimensionalities as well.
 
 # ## Setting up the Neural Network
 # 

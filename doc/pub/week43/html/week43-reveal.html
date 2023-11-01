@@ -184,7 +184,7 @@ MathJax.Hub.Config({
 </center>
 <br>
 <center>
-<h4>Oct 25, 2023</h4>
+<h4>Oct 26, 2023</h4>
 </center> <!-- date -->
 <br>
 
@@ -207,6 +207,8 @@ MathJax.Hub.Config({
 <p><li> The exercises this week will be continued next week as well</li>
 
 <p><li> Discussion of project 2</li>
+
+<p><li> <a href="https://youtu.be/Ia6wwDLxqtM" target="_blank">Video of lab session</a></li>
 </ul>
 </div>
   
@@ -219,6 +221,10 @@ MathJax.Hub.Config({
 <p><li> Building our own Feed-forward Neural Network and discussion of project 2, continuation from last week</li>
 
 <p><li> Solving differential equations with Neural Networks and intro to <b>Tensorflow</b> with  examples.</li>
+
+<p><li> <a href="https://youtu.be/_-AwbBh4G-8" target="_blank">Video of lecture</a></li>
+
+<p><li> <a href="https://github.com/CompPhysics/MachineLearning/blob/master/doc/HandWrittenNotes/2023/NotesOct26.pdf" target="_blank">Whiteboard notes</a></li>
 
 <p><li> Readings and Videos:</li>
 <ul>
@@ -426,14 +432,15 @@ $$
 <p>and multiplying with \( \boldsymbol{a}_h \) gives the output</p>
 <p>&nbsp;<br>
 $$
-\boldsymbol{a}_o=\boldsymbol{w}_h^T\begin{bmatrix} 0 & 0 \\
+\boldsymbol{a}_o=\begin{bmatrix} 0 & 0 \\
                        1 & 0 \\
 		       1 & 0 \\
-		       2 & 1 \end{bmatrix}=\begin{bmatrix} 0 \\ 1 \\ 1 \\0\end{bmatrix},
+		       2 & 1 \end{bmatrix}\begin{bmatrix} 1 \\
+                       -2\end{bmatrix}=\begin{bmatrix} 0 \\ 1 \\ 1 \\0\end{bmatrix},
 $$
 <p>&nbsp;<br>
 
-<p>the wanted result.</p>
+<p>the wanted result.  Pay attention to the dimensionalities as well.</p>
 </section>
 
 <section>
